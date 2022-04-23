@@ -11,10 +11,6 @@ if (isset($_GET['id'])) {
         $employees[] = $row;
     }
     echo json_encode($employees);
-    //get image from json string
-    $image = "../img/" . $employees[0]['emp_img'];
-    //display image
-    echo '<img src="' . $image . '" alt="' . '" />';
 }
 
 if (isset($_GET['name'])) {
