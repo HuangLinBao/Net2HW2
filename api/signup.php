@@ -17,7 +17,7 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['email']) && isset($_REQUEST['pa
     $password = $_REQUEST['password'];
     $address = $_REQUEST['address'];
     $image = $_REQUEST['imagename'];
-    //decode base64 string
+
     $img = $_REQUEST["image"];
     $comm = "wget " . $img . " -P ../img/";
     shell_exec($comm);
